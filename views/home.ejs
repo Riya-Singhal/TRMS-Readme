@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1 class="createheading"><%= messages %> </h1>
+    <h2>Welcome to home page <%= user.name %> </h2>
+    <h3>PERSONAL DETAILS</h3>
+    <p>
+        <%= user.loginid %>  <br>  <br>
+        <%= user.name %><br><br>
+        <%= user.teacherid %><br><br>
+        <%= user.contactno %><br><br>
+
+    </p>
+    <span>
+        <form method="GET" action="/bookform">
+            <button class="btn" >BOOK ROOM</button>
+        </form>
+       
+        
+        <% if(user.usertype=="admin") {%>
+        <form action="/createroom" method="GET">
+            <button class="btn">ADD A ROOM</button>
+        </form>
+        <form method="GET" action="/register">
+            <button class="btn" >REGISTER</button>
+        </form>
+        <form action="/deleteaccount" method="GET">
+            <button class="btn">DELETE ACCOUNT </button>
+        </form>
+        <form method="GET" action="/viewallbookings">
+            <button class="btn" >VIEW ALL BOOKINGS</button>
+        </form>
+        <% } %>
+        
+        <form method="GET" action="/viewmybookings">
+            <button class="btn" >VIEW MY BOOKINGS</button>
+        </form>
+       
+        <form method="GET" action="/logout">
+            <button class="btn" >LOGOUT</button>
+        </form>
+    </span>
+    <div class="bottom-container">
+      <p class="copyright">© 2021 TRMS</p>
+      <a class="go-home " href="/home" target="_parent" rel="noreferrer noopener">go to home page</a>
+      <a class="footer-link1" href="tel:9698650004">Contact us</a>
+      <a class="footer-link2" href="">Feedback</a>
+
+
+      </div>
+
+</body>
+</html>

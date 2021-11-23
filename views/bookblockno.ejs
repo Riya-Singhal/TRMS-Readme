@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block numbers</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1 class="createheading">SELECT THE BLOCK IN WHICH YOU WOULD LIKE TO BOOK THE ROOM</h1>
+    <form action="/bookblockno" method="POST">
+        
+        
+        <button class="btn" class="input" onclick="document.querySelector('form').innerHTML='<input type="text" name="blockno" value='A' '> A</button>
+        <button class="btn" class="input" onclick="document.querySelector('input').innerHTML='<input type="text" name="blockno" value='B' '>B</button>
+        <button class="btn" class="input" onclick="document.querySelector('input').innerHTML='<input type="text" name="blockno" value='C' '>C</button>
+        <button class="btn" class="input" onclick="document.querySelector('input').innerHTML='<input type="text" name="blockno" value='D' '>D</button>
+        <button class="btn" class="input" onclick="document.querySelector('input').innerHTML='<input type="text" name="blockno" value='E' '>E</button>
+        <!-- <button class="btn" class="input" >CONFIRM BLOCK</button> -->
+    </form>
+    
+    <div class="bottom-container">
+      <p class="copyright">© 2021 TRMS</p>
+      <a class="go-home " href="/home" target="_parent" rel="noreferrer noopener">go to home page</a>
+      <a class="footer-link1" href="tel:9698650004">Contact us</a>
+      <a class="footer-link2" href="">Feedback</a>
+
+
+      </div>
+</body>
+</html>

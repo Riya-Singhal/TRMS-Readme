@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete account </title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <form method="post" action="/deleteaccount">
+        <label for="account">select an account to delete</label>
+        <select name="account" id="account">
+            <% for(i=0;i<all.length;i++){ %>
+            <option value="<%=all[i].loginid%>"><%=all[i].loginid%></option>
+            <% } %>  
+        </select>
+        <button>delete account </button>
+    </form>
+    <div class="bottom-container">
+        <p class="copyright">© 2021 TRMS</p>
+        <a class="go-home " href="/home" target="_parent" rel="noreferrer noopener">go to home page</a>
+        <a class="footer-link1" href="tel:9698650004">Contact us</a>
+        <a class="footer-link2" href="">Feedback</a>
+  
+  
+    </div>
+</body>
+</html>

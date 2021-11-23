@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view all bookings</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <form action="/viewallbookings" method="post">
+        <div>
+            <label for="blockno">enter the blockno</label>
+            <input type="text" name="blockno" id="blockno" required>
+        </div>
+        <div>
+            <label for="roomno">enter the roomno</label>
+            <input type="number" name="roomno" id="roomno" required>
+        </div>
+        <div>
+            <label for="date">enter the date to check for booking</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+        
+        <p>enter the time to check for booking</p>
+        <div>
+            <input type="radio" name="time" id="ninetotwelve" value="ninetotwelve">
+            <label for="ninetotwelve">9am-12pm</label>
+            <input type="radio" name="time" id="twelvetothree" value="twelvetothree">
+            <label for="twelvetothree">12pm-3pm</label>
+            <input type="radio" name="time" id="threetosix" value="threetosix">
+            <label for="threetosix">3pm-6pm</label>
+            <input type="radio" name="time" id="sixtoeight" value="sixtoeight">
+            <label for="sixtoeight">6pm-8pm</label>
+        </div>
+        <button>show bookings</button>
+    </form>
+    <div class="bottom-container">
+        <p class="copyright">© 2021 TRMS</p>
+        <a class="go-home " href="/home" target="_parent" rel="noreferrer noopener">go to home page</a>
+        <a class="footer-link1" href="tel:9698650004">Contact us</a>
+        <a class="footer-link2" href="">Feedback</a>
+  
+  
+        </div>
+  
+</body>
+</html>
