@@ -1,9 +1,18 @@
 body{
-  background-image:url("/images/thapar7.png");
+  background-image:url("../images/thapar15-01.png");
   background-size:cover;
+  background-attachment: fixed;
   background-color: #865439;
   text-align: center;
   margin: 0;
+  }
+  .background{
+    background-image:url("../images/thapar18-01.png");
+    background-size:cover;
+    background-attachment: fixed;
+    background-color: #865439;
+    text-align: center;
+    margin: 0;
   }
 h1{
   color:#290001;
@@ -39,7 +48,8 @@ form
   padding-bottom: 40px;
   width: 100%;
   position: absolute;
-bottom:0
+  bottom: 0;
+
 
 }
 /*bottom-container links and copyright placement*/
@@ -79,22 +89,63 @@ color:#FCDEC0;
 .createheading{
   padding:1rem 2.6rem 0 2.6rem;
     font-size: 2.6rem;
-    margin-top: 2.8rem;
+    margin-top: 3rem;
 }
+.createheading2{
+  padding:0 2.6rem 0 2.6rem;
+    font-size: 2.6rem;
+    margin-top: 1rem;
+}
+
+/*label { display: inline-block; width: 210px; text-align: right; }*/
+
 label{
+   color:#FCDEC0;
+  display: inline-block;
+   float: left;
+    clear: left;
+    margin-top: 1.5rem;
+    width: 250px;
+    text-align: left;
+}
+.changelabel{
+  width: 20rem;
+  margin-left: 400px;
+}
+input {
+    margin-top: 1.5rem;
+  display: inline-block;
+  float: left;
+}
+select{
+  margin-top: 1.5rem;
+display: inline-block;
+float: left;
+}
+
+/*label{
  color:#FCDEC0;
+ margin-right: 2rem;
 
 }
+input{
+  text
+}*/
+
 .input{
-  margin-top: 3rem;
+  margin-top: 2rem;
+  text-align:left;
+  margin-left: 28rem;
+
 }
 .input2{
   margin-top: 1.3rem;
+  margin-left: 30rem;
 }
 /*notadmin*/
 .notadminheading{
   font-size: 2.6rem;
-  margin: 10.5rem;
+  margin: 12.5rem;
 }
 /*BUTTON*/
 button{
@@ -131,5 +182,112 @@ option{
 .notloggedheading{
   font-size: 2.6rem;
   margin: 7.5rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
+}
+.notlogged{
+  margin-top: 5rem;
+}
+.error{
+  font-size: 2.6rem;
+  margin-top: 8.5rem;
+  margin-bottom: 2rem;
+}
+.home{
+  text-align: left;
+  margin-left: auto;
+    margin-right: auto;
+    width: 18em;
+}
+.viewallbookings{}
+.showall{
+margin-top: 3rem;
+}
+.info
+{
+  text-align: left;
+  margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+}
+.noroom{
+  font-size: 2rem;
+  margin-top: 2rem;
+    color:#290001;
+}
+
+
+
+
+
+
+
+
+.ul2 {
+  list-style-type: none;
+  margin: 0;
+  padding-bottom:0;
+  overflow: hidden;
+  background-color:#865439;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  /*position: fixed;
+  bottom: 0;
+  width: 100%;*/
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #FCDEC0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #290001;
+}
+
+.ul{
+  list-style-type: none;
+  margin: 0;
+  padding-bottom:0;
+  overflow: hidden;
+  background-color:#865439;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.li{
+  display: block;
+  color: #FCDEC0;
+  text-align: center;
+    padding: 14px 16px;
+margin-right: 5rem;
+  text-decoration: none;
+}
+.bottom
+{
+  padding-bottom: 5rem;
+}
+.viewall{
+  margin-top: 5rem;
+  text-align: left;
+  margin-left: 28rem;
+}
+.hell{
+  margin-top:0;
+  text-align:left;
+  margin-left: 28rem;
+}
+.common
+{
+  margin-top: 0.5rem;
 }

@@ -7,23 +7,26 @@
     <title>Delete account </title>
     <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body class="background">
+  <ul class="ul2">
+  <li><a href="/home" target="_parent" rel="noreferrer noopener">Home</a></li>
+  <li><a href="tel:9698650004">Contact</a></li>
+  <li><a href="">Feedback</a></li>
+</ul>
+  <h1 class="createheading">DELETE ACCOUNT </h1>
     <form method="post" action="/deleteaccount">
-        <label for="account">select an account to delete</label>
+        <label class="changelabel" for="account" >SELECT AN ACCOUNT TO DELETE</label>
         <select name="account" id="account">
             <% for(i=0;i<all.length;i++){ %>
             <option value="<%=all[i].loginid%>"><%=all[i].loginid%></option>
-            <% } %>  
-        </select>
-        <button>delete account </button>
+            <% } %>
+        </select><br><br><br><br>
+        <button class="btn" >DELETE ACCOUNT </button>
     </form>
-    <div class="bottom-container">
-        <p class="copyright">© 2021 TRMS</p>
-        <a class="go-home " href="/home" target="_parent" rel="noreferrer noopener">go to home page</a>
-        <a class="footer-link1" href="tel:9698650004">Contact us</a>
-        <a class="footer-link2" href="">Feedback</a>
-  
-  
-    </div>
+
+              <ul class="ul">
+              <li style="float:right" class="li">© 2021 TRMS</li>
+              <li class="li">THAPAR ROOM MANAGEMENT SYSTEM</li>
+              </ul>
 </body>
 </html>

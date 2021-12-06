@@ -38,15 +38,21 @@ router.post('/',async(req,res)=>{
     console.log(user);
     console.log("req body is ",req.body);
     const {purpose  ,capacity ,society,date,time}=req.body;
+    var mydate = new Date(date);
+    //var today = new Date();
+    //if ( myDate > today )
     today= new Date();
     var datei = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     console.log(today);
-    console.log(date);
-    if(date < datei)
+    console.log(mydate);
+    if(mydate < today)
     {
       console.log("yes");
       res.render('../views/errorbooking.ejs');
       
+    }
+    else{
+      console.log("correct");
     }
     req.session.purpose = purpose;
     req.session.capacity = capacity;

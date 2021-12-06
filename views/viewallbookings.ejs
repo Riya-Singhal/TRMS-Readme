@@ -7,42 +7,51 @@
     <title>view all bookings</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body class="background">
+  <ul class="ul2">
+  <li><a href="/home" target="_parent" rel="noreferrer noopener">Home</a></li>
+  <li><a href="tel:9698650004">Contact</a></li>
+  <li><a href="">Feedback</a></li>
+</ul>
+<h1 class="createheading">VIEW ALL BOOKINGS</h1>
+
+
     <form action="/viewallbookings" method="post">
-        <div>
-            <label for="blockno">enter the blockno</label>
+        <div  class="input" >
+            <label for="blockno">ENTER THE BLOCK NO.</label>
             <input type="text" name="blockno" id="blockno" required>
         </div>
-        <div>
-            <label for="roomno">enter the roomno</label>
+        <div  class="input" >
+            <label for="roomno">ENTER THE ROOM NO.</label>
             <input type="number" name="roomno" id="roomno" required>
         </div>
-        <div>
-            <label for="date">enter the date to check for booking</label>
+        <div  class="input" >
+            <label for="date">ENTER THE DATE TO CHECK FOR BOOKING</label>
             <input type="date" name="date" id="date" required>
+
         </div>
-        
-        <p>enter the time to check for booking</p>
-        <div>
-            <input type="radio" name="time" id="ninetotwelve" value="ninetotwelve">
-            <label for="ninetotwelve">9am-12pm</label>
-            <input type="radio" name="time" id="twelvetothree" value="twelvetothree">
-            <label for="twelvetothree">12pm-3pm</label>
-            <input type="radio" name="time" id="threetosix" value="threetosix">
-            <label for="threetosix">3pm-6pm</label>
-            <input type="radio" name="time" id="sixtoeight" value="sixtoeight">
-            <label for="sixtoeight">6pm-8pm</label>
+        <br><br><br><br><br>
+        <p class="viewall" >ENTER THE TIME TO CHECK FOR BOOKING</p>
+
+        <div class="hell" >
+            <label class="common" for="ninetotwelve">9am-12pm</label>
+            <input class="common" type="radio" name="time" id="ninetotwelve" value="ninetotwelve">
+            <label class="common" for="twelvetothree">12pm-3pm</label>
+            <input class="common" type="radio" name="time" id="twelvetothree" value="twelvetothree">
+              <label class="common" for="threetosix">3pm-6pm</label>
+            <input class="common" type="radio" name="time" id="threetosix" value="threetosix">
+          <label class="common" for="sixtoeight">6pm-8pm</label>
+            <input class="common" type="radio" name="time" id="sixtoeight" value="sixtoeight">
+
         </div>
-        <button>show bookings</button>
+        <br><br><br><br><br><br>
+        <button  class="btn">show bookings</button>
     </form>
-    <div class="bottom-container">
-        <p class="copyright">© 2021 TRMS</p>
-        <a class="go-home " href="/home" target="_parent" rel="noreferrer noopener">go to home page</a>
-        <a class="footer-link1" href="tel:9698650004">Contact us</a>
-        <a class="footer-link2" href="">Feedback</a>
-  
-  
-        </div>
-  
+
+              <ul class="ul">
+              <li style="float:right" class="li">© 2021 TRMS</li>
+              <li class="li">THAPAR ROOM MANAGEMENT SYSTEM</li>
+              </ul>
+
 </body>
 </html>
