@@ -13,3 +13,4 @@ There would be two categories of users: 1. User 2. Admin
 3. Cancel booking
 
 While booking room, a user would be required to enter the details regarding their requirements, date and time of booking and purpose of booking and then they would be shown blocks and buildings where such rooms are available and then on selecting the blocks they can select the room number and get a confirmation about room booking.And similar would be the procedures for other tasks.
+![WhatsApp Image 2022-12-20 at 5 22 08 PM](https://user-images.githubusercontent.com/54725441/208661078-963bc4b8-d901-4127-b26c-b22a6928945c.jpeg)
